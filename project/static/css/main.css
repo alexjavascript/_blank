@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  font-style: normal;
+  src: 
+    local("PT Sans Narrow"),
+    url("../fonts/ptsansnarrow_700.woff2") format("woff2"),
+    url("../fonts/ptsansnarrow_700.woff") format("woff");
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #242424;
+  --basic-dark: #aba9a7;
+  --basic-neutral: #e5e5e5;
+  --basic-extra-light: #f8f5f2;
+  --basic-white: #ffffff;
+
+  --special: #663d15;
+}
+
+.page {}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+
+  background-color: var(--basic-black);
+  background-image: url("../img/index-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
